@@ -1,14 +1,9 @@
-from FirstRandom import CustomRandom as FirstPositive
-from SecondRandom import CustomRandom as SecondNegative
-
-if __name__ == "__main__":
-    print("1. Случайное целое положительное число от 0 до 100")
-    print("2. Случайное целое отрицательное число от 0 до 100")
-    v = input("Введите вариант генерации случайного числа: ")
-    match v.split():
-        case ['1']:
-            print(FirstPositive.positiveRandom())
-        case ['2']:
-            print(SecondNegative.negativeRandom())
-        case _:
-            print("Нет такого функционала")
+import random
+Variant2=int(input("Матрица: "))
+ggg=[[random.randint(1,9) for i in range(Variant2)] for j in range(Variant2)]
+min = ggg[0][0]
+for i in range(Variant2):
+    for j in range(Variant2):
+        if(ggg[i][j]<min): min=ggg[i][j]
+for i in range(Variant2): print(ggg[i])
+print(min)
