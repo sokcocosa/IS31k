@@ -1,14 +1,11 @@
-from FirstRandom import CustomRandom as FirstPositive
-from SecondRandom import CustomRandom as SecondNegative
+import matrix
 
 if __name__ == "__main__":
-    print("1. Случайное целое положительное число от 0 до 100")
-    print("2. Случайное целое отрицательное число от 0 до 100")
-    v = input("Введите вариант генерации случайного числа: ")
-    match v.split():
-        case ['1']:
-            print(FirstPositive.positiveRandom())
-        case ['2']:
-            print(SecondNegative.negativeRandom())
-        case _:
-            print("Нет такого функционала")
+    w = int(input("Введите длину матрицы: "))
+    h = int(input("Введите ширину матрицы: "))
+
+    matrx = matrix.create_matrix(h, w)
+    
+    print(matrx) # вывод самой матрицы
+
+    print(matrix.maximum_element(matrx)) # вывод максимального элемента матрицы
