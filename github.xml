@@ -1,0 +1,10 @@
+<application>
+  <component name="GithubAccounts">
+    <account name="lia-gat" id="30c3b009-44b2-4903-b203-b9d806e04baf">
+      <server host="github.com" />
+    </account>
+  </component>
+  <component name="GithubSettings">
+    <option name="CLONE_GIT_USING_SSH" value="true" />
+  </component>
+</application>
