@@ -1,14 +1,12 @@
-from FirstRandom import CustomRandom as FirstPositive
-from SecondRandom import CustomRandom as SecondNegative
+import math
 
-if __name__ == "__main__":
-    print("1. Случайное целое положительное число от 0 до 100")
-    print("2. Случайное целое отрицательное число от 0 до 100")
-    v = input("Введите вариант генерации случайного числа: ")
-    match v.split():
-        case ['1']:
-            print(FirstPositive.positiveRandom())
-        case ['2']:
-            print(SecondNegative.negativeRandom())
-        case _:
-            print("Нет такого функционала")
+x = float()
+
+if x <= 5:
+    y = x ** 2 + 5
+elif 5 < x < 20:
+    y = 0
+elif x >= 20:
+    y = 1
+
+print(y)
