@@ -13,7 +13,7 @@ def opredelitil_2x2(list1):
     try:
         return list1[0][0] * list1[1][1] - list1[0][1] * list1[1][0]
     except IndexError:
-        print("Нужна матрица 2x2")
+        return "Нужна матрица 2x2"
 
 
 numb = int(input())
