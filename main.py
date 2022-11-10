@@ -10,7 +10,7 @@ elif x >= 0 and x <= 0.9:
 else:
     y = x**2 + 0.2
     print(y)
-    
+
 """from FirstRandom import CustomRandom as FirstPositive
 from SecondRandom import CustomRandom as SecondNegative
 
