@@ -1,4 +1,12 @@
 ss = input()
 s = input()
-ss = ss.split(s)
-print(len(ss) - 1)
+
+n = 0
+i = 1
+
+while i != -1:
+    i = ss.find(s)
+    if i >= 0:
+        n += 1
+    ss = ss[i + 1:]
+print(n)
